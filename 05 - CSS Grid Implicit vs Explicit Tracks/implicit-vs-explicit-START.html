@@ -15,6 +15,8 @@
       <div class="item">4</div>
       <div class="item">5</div>
       <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
     </div>
 
     <style>
@@ -24,7 +26,10 @@
         /* Explicit: definí explícitamente las columnas, pero las rows (son 2 rows) están implícitas*/
         /* Implicit: dotted pink, Explicit: solid dashed black */
         grid-template-columns: 200px 400px;
-        grid-template-rows: 50px 100px;
+        grid-template-rows: 50px 50px;
+        /* Cuando haces auto rows en firefox no puedes poner 2 valores ejemplo: 50 100, pero en chrome sí pueden verse*/
+        grid-auto-rows: 100px;
+        /* Para agregar columnas debemos utilizar grid: auto flow (see ex06) */
       }
     </style>
   </body>
